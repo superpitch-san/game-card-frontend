@@ -1,0 +1,14 @@
+@import '../../common/commonConstant.scss';
+
+.Game {
+  width: 100%;
+  .game-card-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    @media (max-width: 320px) {
+      height: 130px;
+    }
+  }
+}

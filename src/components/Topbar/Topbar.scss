@@ -1,0 +1,60 @@
+@import '../../common/commonConstant.scss';
+
+.Topbar {
+  background-color: $blue;
+  height: 140px;
+  padding: 20px 0px;
+  color: $white;
+  .topbar-title {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 20px;
+  }
+  .topbar-score-box {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    .topbar-click-box {
+      display: flex;
+      border: 1px solid;
+      border-radius: 10px;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      box-shadow: $shadow;
+      .topbar-click-title {
+        margin-right: 5px;
+      }
+      .topbar-click-score {
+        border: 1px solid $white;
+        border-radius: 5px;
+        width: 25px;
+        text-align: center;
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+  .topbar-button-box {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    .topbar-button {
+      display: flex;
+      border: 1px solid $white;
+      border-radius: 10px;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      color: $white;
+      background: transparent;
+      margin-top: 15px;
+      box-shadow: $shadow;
+      font-size: 12px;
+    }
+  }
+}

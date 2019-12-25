@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+body {
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  height: 100%;
+  padding: 0;
+}
+
+$blue: #079826;
+$white: #ffffff;
+$black: #3c3c3c;
+$red: #db1709;
+$shadow: 0px 0px 3px 0px #2b2b2b;
+$loading-background-color:  rgba(0,0,0,0.5);
+
+.game-button {
+  display: flex;
+  border: 1px solid $white;
+  border-radius: 10px;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  color: $white;
+  background: transparent;
+  margin-top: 15px;
+  font-size: 12px;
+  box-shadow: $shadow;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

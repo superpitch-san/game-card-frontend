@@ -1,0 +1,32 @@
+@import '../../common/commonConstant.scss';
+
+.Modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: $loading-background-color;
+  .modal-sub-box {
+    text-align: center;
+    background: $blue;
+    color: $white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: $shadow;
+    margin: 40vh 40px;
+    border: 1px solid $white;
+  }
+  .modal-title {
+
+  }
+  .modal-description {
+
+  }
+  .modal-button-box {
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}

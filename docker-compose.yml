@@ -1,0 +1,21 @@
+version: "3.4"
+services: 
+  card-game-fe:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: builder
+    container_name: card-game-fe
+    command: sh  -c 'npm start'
+    working_dir: /app/card-game-fe
+    volumes:
+      - .:/app/card-game-fe
+      - /app/card-game-fe/node_modules
+    ports:
+      - '3000:3000'
+    restart: 'always'
+    environment:
+      - SASS_PATH=node_modules:src
+      - REACT_APP_DOMAIN_SAMPLE_API=https://jsonplaceholder.typicode.com
+      - REACT_APP_DOMAIN_COOKIE=localhost
+      - REACT_APP_DOMAIN_BACKEND_API=http://localhost:8000

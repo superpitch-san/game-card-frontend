@@ -1,0 +1,51 @@
+@import '../../common/commonConstant.scss';
+
+.Home {
+  width: 100%;
+  height: 1000px;
+  color: $white;
+  background: $blue;
+  text-align: center;
+  .home-title {
+    font-size: 60px;
+    padding-top: 40px;
+    @media (max-width: 768px) {
+      font-size: 55px;
+    }
+  }
+  .home-poker-img {
+    width: 250px;
+    @media (max-width: 768px) {
+      width: 220px;
+    }
+  }
+  .home-button-box {
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      height: 60px;
+    }
+    .home-button {
+      padding: 10px;
+      border: 1px solid $white;
+      border-radius: 20px;
+      width: 180px;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      color: $white;
+      background: $red;
+      margin-top: 15px;
+      box-shadow: $shadow;
+      text-decoration: none;
+      @media (max-width: 768px) {
+        width: 100%;
+        font-size: 22px;
+        height: 55px;
+      }
+    }
+  }
+}

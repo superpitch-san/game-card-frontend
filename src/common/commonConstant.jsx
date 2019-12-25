@@ -1,0 +1,11 @@
+export default {
+  'cardIMG': '/images/card-img.png',
+  'pokerIMG': '/images/poker-img.png',
+  // env
+  'REACT_APP_DOMAIN_BACKEND_API': process.env.REACT_APP_DOMAIN_BACKEND_API,
+  // actions
+  'GET_SCORE_SUCCESS': 'GET_SCORE_SUCCESS',
+  'GET_SCORE_FAILURE': 'GET_SCORE_FAILURE',
+  'POST_CREATE_SCORE_SUCCESS': 'POST_CREATE_SCORE_SUCCESS',
+  'POST_CREATE_SCORE_FAILURE': 'POST_CREATE_SCORE_FAILURE',
+};
